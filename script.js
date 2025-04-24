@@ -1,5 +1,4 @@
-//ключ от погоды
-//c2d465bd0b02eabaf001422cfe6f3517
+
 
 
 let connection = new XMLHttpRequest();
