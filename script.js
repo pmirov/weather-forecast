@@ -9,7 +9,7 @@ function CheckTemp() {
     let city = document.getElementById("City"); 
 	cityName.innerHTML = city.value;
 
-    connection.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&APPID=a56775169e6835ec0a4a0a49958b0da5`, true);
+    connection.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&APPID=`, true);
     connection.send();
 }
 
