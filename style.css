@@ -1,0 +1,35 @@
+body
+{
+    background-color: rgb(243,242,242) !important;
+}
+
+
+
+.header
+{
+    color: rgb(79,171,177);
+    height: 50px;
+}
+
+.content
+{
+    background-color:rgb(252,252,252);
+    margin-bottom: 140px;
+}
+
+.title
+{
+    color: rgb(79,171,177);
+}
+
+.box
+{
+    height: 150px
+}
+
+
+
+/* div
+{
+    border: 1px solid black !important;
+} */

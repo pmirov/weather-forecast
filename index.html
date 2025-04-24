@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wwwroot/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body onload="CheckTemp()">
+
+    <div class="container text-center">
+        <div class="row header align-items-center">
+            <div class="col-md-6">
+                <div>CURRENT WEATHER</div>
+            </div>
+            <div class="col-md-6">
+                <div>    
+                    <form>
+                    <label for="name">Город:</label>
+                    <select id="City">
+                        <option>Moscow</option>
+                        <option>Novosibirsk</option>
+                        <option>New York</option>
+                        <option>Yakutsk</option>
+                        <option>Hamburg</option>
+                    </select>
+                    <input type="button" onclick="CheckTemp()" value="Узнать погоду">
+                </form></div>
+            </div>
+        </div>
+    </div>
+    <div class="container content box">
+        <div class="row title fw-bold">
+            <div class="col-md-6">
+                <div id="cityName">Moscow</div>
+            </div>
+            <div class="col-md-6 text-end">
+                <div id="currentDate">15.10.2024</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 fw-bold">
+                <div id="infoBox">Sunny</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="cloudBox">The Sun</div>
+            </div>
+            <div class="col-md-4 fs-1">
+                <div id="mainBox"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">Min. temperature</div>
+                    <div class="col-6"  id="minBox">16C</div>
+    
+                    <div class="w-100 d-none d-md-block"></div>
+    
+                    <div class="col-6" >Max. temperature</div>
+                    <div class="col-6" id="maxBox">22C</div>
+    
+                    <div class="w-100 d-none d-md-block"></div>
+    
+                    <div class="col-6" >Wind speed km/h</div>
+                    <div class="col-6" id="windBox">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="container content">
+            <div class="row">
+                <div class="col-md-12 title fw-bold text-light">
+                    <div>Hourly</div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col fw-bold">Sunday</div>
+                        <div class="col fw-bold">7:00</div>
+                        <div class="col fw-bold">10:00</div>
+                        <div class="col fw-bold">13:00</div>
+                        <div class="col fw-bold">15:00</div>
+                        <div class="col fw-bold">18:00</div>
+                        <div class="col fw-bold">21:00</div>
+
+                        <div class="w-100 d-none d-md-block"></div>
+                       
+        
+                        <div class="col">Forecast</div>
+                        <div class="col" id="hourlyForecastBox">16C</div>
+                        <div class="col" id="hourlyForecastBox">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+        
+                        <div class="w-100 d-none d-md-block"></div>
+        
+                        <div class="col">Temp(C)</div>
+                        <div class="col">16</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+
+                        <div class="w-100 d-none d-md-block"></div>
+        
+                        <div class="col">Wind (km/h)</div>
+                        <div class="col">16</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                        <div class="col">16C</div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div> -->
+
+<!--     <h1>Welcome to my website!</h1>
+    <form>
+        <label for="name">Город:</label>
+        <select id="City">
+            <option>Moscow</option>
+            <option>Novosibirsk</option>
+            <option>New York</option>
+            <option>Yakutsk</option>
+            <option>Hamburg</option>
+        </select>
+        <input type="button" onclick="CheckTemp()" value="Выбрать город">
+    </form>
+    <p></p>
+    <button onclick="Send()">Отправить</button>
+        <div id="box"></div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
